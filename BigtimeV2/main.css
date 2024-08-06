@@ -306,3 +306,24 @@
     position: absolute;
     animation: rotate 10s linear infinite;
 }
+
+.Green{
+    animation: upAnimation 0.5s ease-out forwards, floatAnimation 1.5s linear infinite 0.5s;
+    filter: blur(3px); 
+}
+
+.Red{
+    animation: upAnimation 0.5s ease-out forwards, floatAnimation 2s linear infinite 0.5s;
+    rotate: 180deg;
+    filter: blur(3px); 
+}
+
+.Shrooms{
+    animation: dropAnimation 0.5s ease-out forwards, floatAnimation 1.7s linear infinite 0.5s;
+    filter: blur(3px); 
+}
+
+
+.Milktea {
+    position: absolute;
+}
