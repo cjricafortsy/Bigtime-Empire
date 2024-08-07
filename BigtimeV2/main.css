@@ -1,3 +1,7 @@
+:root{
+    --main-color: #dfa43f;
+}
+
 /*--Preloader--*/
 .preloader {
     display: flex;
@@ -23,9 +27,7 @@
 /*--Nabar--*/
 .custom-navbar {
     background-color: rgb(255, 255, 255); /* Navbar background color */
-    opacity: 0.7; /* Navbar opacity */
     z-index: 99;
-    position: fixed; /* Fixes the navbar to the top of the page */
     top: 0; /* Ensures the navbar is positioned at the top */
     width: 100%; /* Ensures the navbar spans the full width of the viewport */
     left: 0; /* Ensures the navbar starts from the left edge */
@@ -36,7 +38,7 @@
 }
 
 .navbar .nav-link:hover {
-    color: rgb(247, 168, 0) !important; /* Text color for hovered navbar links */
+    color: var(--main-color) !important; /* Text color for hovered navbar links */
 }
 
 .navbar-toggler {
@@ -50,7 +52,7 @@
 
 .d-flex .apply {
     border-radius: 25px;
-    background-color: rgb(247, 168, 0);
+    background-color: var(--main-color);
     font-size: large;
     color: #fff; /* Ensures text is readable on the background */
     border-width: 5px;
@@ -59,28 +61,7 @@
 }
 
 .d-flex .apply:hover {
-    border-color: rgb(247, 168, 0); /* Change this to the desired hover border color */
-}
-
-
-/*--Home--*/
-.centered-text {
-    font-size: 7rem;
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
-    line-height: 1.2; /* Adjust line height to control spacing between lines */
-    margin: 0; /* Remove default margin */
-}
-.paragraph-text {
-    position: relative;
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    left: -11%;
-    color: #777777; /* Adjust color as needed */
-    margin-top: 2px; /* Space between heading and paragraph */
-}
-.image-container img {
-    width: 85%;
-    height: auto;
+    border-color: var(--main-color); /* Change this to the desired hover border color */
 }
 
 /*--Brands--*/
@@ -136,8 +117,8 @@
 .carousel-control-next:hover::after {
     content: "";
     position: absolute;
-    top: 0;
-    height: 100%;
+    top: 14%;
+    height: 86%;
     width: 50%; /* Half width */
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); /* Transparent to black */
 }
@@ -145,8 +126,8 @@
 .carousel-control-prev:hover::after{
     content: "";
     position: absolute;
-    top: 0;
-    height: 100%;
+    top: 14%;
+    height: 86%;
     width: 50%; /* Half width */
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); /* Transparent to black */
 }

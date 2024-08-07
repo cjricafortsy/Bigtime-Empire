@@ -20,7 +20,7 @@
     </div>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="position: fixed;">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
                 <img src="Assets/Logo.png" alt="logo" width="150px" height="70px">
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="apply btn btn-sm btn-outline-light fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Apply Now</button>
+                    <button class="apply btn btn-sm btn-outline-light fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Apply Now!</button>
                 </div>
             </div>
         </div>
@@ -58,24 +58,39 @@
         <div class="container-fluid vh-100 d-flex align-items-center">
             <div class="row w-100">
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="centered-text">
+                    <h1 class="centered-text" style="font-size: 7rem; font-family: 'Inter', sans-serif; line-height: 1.2; margin: 0; padding-left: 9.5rem;">
                         Bigtime Empire<br>
                         Corporation
                     </h1>
-                    <p class="paragraph-text">
+                    <p class="paragraph-text" style="position: relative; font-size: 2.5rem; font-family: 'Inter', sans-serif; left: -2.5%; color: #777777; margin-top: 2px; ">
                         Here, We Do Things Differently
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center image-container">
-                    <img src="Assets/building.png" alt="">
+                    <img src="Assets/building.png" alt="" style="width: 80%; height: auto;">
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="news" id="news" style="background-color: #f0f0f0;">
+        <div class="header" style="margin-top: 10rem; margin-bottom: 2rem; margin-left: 5rem;">
+            <h1 style="font-family: 'Inter', sans-serif; font-size: 3rem; font-weight: bold; margin-top: 3rem; text-align: start; padding-top: 3rem; padding-left: 6rem;">
+                News <span style="color: #dfa43f;">| </span>Events
+            </h1>
+            <p style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: bold; margin-top: 1rem; text-align: center; width: 100%; padding-left: 30rem; padding-right: 30rem; padding-bottom: 5rem;">
+                <i class='bx bxs-quote-left' style="font-size: 1.5rem; color: #dfa43f;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Use this section to describe your company News / Events (ex. Christmas party, Halloween, etc.). You could share your company’s story and details about why you are in business.&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bxs-quote-left' style="font-size: 1.5rem; color: #dfa43f;"></i>
+            </p>
+    </section>
+    
+
     <!-- Brands -->
-    <div class="brands" id="brands">
+    <div class="brands" id="brands" style="margin-bottom: 5rem;">
         <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="header" style="display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 10rem;">
+                <h1 style="font-family: 'Inter', sans-serif; font-size: 5rem; font-weight: bold;">Our <span style="color: #dfa43f;">Brands</span></h1>
+            </div>
+            
             <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
