@@ -1,4 +1,4 @@
-//Preloader
+// Preloader
 document.addEventListener("DOMContentLoaded", function() {
     // Hide the preloader when the page is fully loaded
     window.onload = function() {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 
-
+// Brands
 $(document).ready(function(){
     $('#carousel').carousel();
 });
@@ -27,3 +27,28 @@ $(document).ready(function() {
         $(carousel).carousel('prev');
     });
 });
+
+// Milestone
+// document.addEventListener('DOMContentLoaded', () => {
+//     const counters = document.querySelectorAll('.stat-number');
+//     const speed = 200; // Adjust the speed here
+
+//     counters.forEach(counter => {
+//       const animateCount = () => {
+//         const target = +counter.getAttribute('data-target');
+//         const count = +counter.innerText;
+//         const increment = target / speed;
+
+//         console.log(`Animating: ${count} -> ${target}`); // Debugging line
+
+//         if (count < target) {
+//           counter.innerText = Math.ceil(count + increment);
+//           setTimeout(animateCount, 10);
+//         } else {
+//           counter.innerText = target;
+//         }
+//       };
+
+//       animateCount();
+//     });
+//   });

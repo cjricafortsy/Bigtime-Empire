@@ -157,31 +157,7 @@
     transform: translateY(0); /* Final position */
 }
 
-
-.Pares {
-    position: absolute;
-    animation: rotate 10s linear infinite;
-}
-
-.Tsg{
-    position: absolute;
-    /* animation: floatAnimation 2s ease-in-out infinite; */
-}
-
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translate(-1%, -1%) translateY(0); /* Start and end position (no movement vertically) */
-    }
-    50% {
-        transform: translate(-1%, -1%) translateY(-20px); /* Move up */
-    }
-}
-
-.Cali {
-    position: absolute;
-    animation: rotate 10s linear infinite;
-}
-
+/* Pares */
 @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -191,7 +167,41 @@
     }
   }
 
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translate(-1%, -1%) translateY(0); /* Start and end position (no movement vertically) */
+    }
+    50% {
+        transform: translate(-1%, -1%) translateY(-20px); /* Move up */
+    }
+}  
 
+@keyframes dropAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh); /* Start off the top of the viewport */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+@keyframes upAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh); /* Start off the bottom of the viewport */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+.Pares {
+    position: absolute;
+    animation: rotate 10s linear infinite;
+}
 
 .chili {
     animation: upAnimation 0.5s ease-out forwards, floatAnimation 2s linear infinite 0.5s;
@@ -220,26 +230,9 @@
     filter: blur(3px);
 }
 
-@keyframes dropAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-100vh); /* Start off the top of the viewport */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* End at normal position */
-    }
-}
-
-@keyframes upAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(100vh); /* Start off the bottom of the viewport */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* End at normal position */
-    }
+/* The Sandwich Guy */
+.Tsg{
+    position: absolute;
 }
 
 .lettuce {
@@ -262,6 +255,12 @@
 .Mayo {
     animation: dropAnimation 0.4s ease-out forwards, floatAnimation 1.8s linear infinite 0.5s;
     filter: blur(3px); 
+}
+
+/* CaliPizza */
+.Cali {
+    position: absolute;
+    animation: rotate 10s linear infinite;
 }
 
 .Pepperoni{
@@ -312,6 +311,7 @@
     filter: blur(3px); 
 }
 
+/* California Beach Pansol */
 .umbrella1{
     animation: dropAnimation 0.5s ease-out forwards, floatAnimation 2s linear infinite 0.5s;
     rotate: -20deg;
@@ -323,6 +323,7 @@
     filter: blur(3px); 
 }
 
+/* California Beach Pizzeria */
 .Calibeachpizza {
     position: absolute;
     animation: rotate 10s linear infinite;
@@ -344,7 +345,7 @@
     filter: blur(3px); 
 }
 
-
+/* Sapporo */
 .Milktea {
     position: absolute;
 }
@@ -374,7 +375,28 @@
     filter: blur(3px); 
 }
 
+/* Kalye Express */
 .Kalye{
     position: absolute;
     animation: rotate 10s linear infinite;
 }
+
+/* Milestone */
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .stat-description {
+    font-size: 1rem;
+    color: #6c757d;
+  }
